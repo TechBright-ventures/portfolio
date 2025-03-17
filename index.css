@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: #007BFF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(135deg, #000, #007BFF);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #0056b3;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.education-container, .experience-container, .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.edu-item, .exp-item, .testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+}
+
+.education-container, .experience-container, .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.edu-item, .exp-item, .testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+}
+
+.youtube-videos {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.skills {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+.skill-box {
+    background: #f4f4f4;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.skill-box:hover {
+    transform: translateY(-5px);
+    background: #007bff;
+    color: #fff;
+}
+
+#contact {
+    padding: 4rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #007BFF;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
