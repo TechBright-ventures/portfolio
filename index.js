@@ -46,3 +46,15 @@ var form = document.getElementById("my-form");
     });
   }
   form.addEventListener("submit", handleSubmit)
+//IMAGE GALLERY
+ function showImage(src) {
+            const popup = document.getElementById('imagePopup');
+            const popupImg = document.getElementById('popupImg');
+            popupImg.src = src;
+            popup.classList.add('show');
+        }
+
+        function hideImage() {
+            const popup = document.getElementById('imagePopup');
+            popup.classList.remove('show');
+        }
