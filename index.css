@@ -155,6 +155,11 @@ nav {
     border-radius: 10px;
 }
 
+h2 {
+            font-size: 28px;
+            color: #007BFF;
+}
+
 .skills {
     text-align: center;
     padding: 50px 20px;
